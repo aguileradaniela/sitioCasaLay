@@ -298,6 +298,7 @@
      height: auto !important;
      gap: 12px;
      padding: 12px;
+    border: 5px solid red !important; 
    }
 
    .paginas {
