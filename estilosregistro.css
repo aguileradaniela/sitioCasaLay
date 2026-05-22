@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #F0EBE1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.contenedor {
+  display: flex;
+  width: 860px;
+  max-width: 100%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.panel-izquierdo {
+  width: 420px;
+  padding: 40px 44px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.logo img {
+  width: 42px;
+  height: 42px;
+}
+
+.logo-texto {
+  font-size: 20px;
+  font-weight: 700px;
+  color: #1E1E1B;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 700px;
+  color: #1E1E1B;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.botones-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.btn-social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #d4cfc8;
+  background-color: #f7f4f0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-social:hover {
+  background-color: #ede9e3;
+}
+
+.divisor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #aaa;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.divisor::before,
+.divisor::after {
+  content: '';
+  flex: 1px;
+  height: 1px;
+  background-color: #d4cfc8;
+}
+
+.campo {
+  margin-bottom: 12px;
+}
+
+.campo input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d4cfc8;
+  border-radius: 8px;
+  background-color: #f7f4f0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #1E1E1B;
+  outline: none;
+}
+
+.campo input:focus {
+  border-color: #8B5E3C;
+  outline: 2px solid #8B5E3C;
+  background-color: #ffffff;
+}
+
+.campo input::placeholder {
+  color: #aaa;
+}
+
+.btn-registrarse {
+  width: 100%;
+  padding: 13px;
+  margin-top: 6px;
+  background-color: #1E1E1B;
+  color: #F0EBE1;
+  border: none;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-registrarse:hover {
+  background-color: #8B5E3C;
+}
+
+.iniciar-sesion {
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+  margin-top: 18px;
+}
+
+.iniciar-sesion a {
+  color: #8B5E3C;
+  text-decoration: none;
+  font-weight: 600px;
+}
+
+.panel-derecho {
+  flex: 1;
+  overflow: hidden;
+}
+
+.panel-derecho img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 400px) {
+  .panel-derecho {
+    display: none;
+  }
+
+  .panel-izquierdo {
+    width: 100%;
+  }
+}
